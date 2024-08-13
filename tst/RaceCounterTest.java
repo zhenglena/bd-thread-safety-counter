@@ -18,7 +18,7 @@ public class RaceCounterTest {
         raceCounter.startCounter(numThreads);
 
         // THEN
-        Assertions.assertEquals(numThreads, raceCounter.getCounter(), "The final result of counter is " +
+        Assertions.assertEquals(numThreads, raceCounter.getCounter().get(), "The final result of counter is " +
                 "not what was expected.");
     }
 
